@@ -64,6 +64,14 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
+    "content": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
     "blocks": {
       "type": "dynamiczone",
       "pluginOptions": {

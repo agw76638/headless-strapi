@@ -534,6 +534,12 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
         };
       }>;
     category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
+    content: Schema.Attribute.RichText &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos'> &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
